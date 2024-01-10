@@ -1,7 +1,12 @@
+mod optimal;
+
 use rand::Rng;
+use crate::optimal::optimal_algorithm;
 
 fn main() {
-    println!("Hello, world!");
+    let seq = generate_random_reference_sequence();
+    let optimal = optimal_algorithm(seq);
+    println!("Optimal: {}", optimal);
 }
 
 fn generate_random_reference_sequence() -> [u8; 1000] {
