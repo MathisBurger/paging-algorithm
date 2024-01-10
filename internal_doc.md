@@ -1,0 +1,2 @@
+- First wrote optimal algorithm 
+- Added LRU algorithm
