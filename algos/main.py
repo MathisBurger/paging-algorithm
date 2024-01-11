@@ -14,9 +14,9 @@ def generateReferenceSequence(amount, variety):
 
 if __name__ == '__main__':
     data = [[], [], [], [], []]
-    memorySize = 4
-    for i in range(100):
-        seq = generateReferenceSequence(100, 10)
+    memorySize = 20
+    for i in range(10000):
+        seq = generateReferenceSequence(1000, 100)
         data[0].append(optimalPage(seq, len(seq), memorySize))
         data[1].append(fifoPageFaults(seq, len(seq), memorySize))
         data[2].append(LFUpageFaults(len(seq), memorySize, seq))
