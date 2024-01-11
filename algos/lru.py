@@ -1,5 +1,5 @@
 # Python implementation of above algorithm 
-def pageFaults(pages, n, capacity): 
+def LRUpageFaults(pages, n, capacity): 
   
     # To represent set of current pages. We use 
     # an unordered_set so that we quickly check 
@@ -60,11 +60,6 @@ def pageFaults(pages, n, capacity):
   
     return page_faults 
   
-  
-# Driver code 
-pages = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2] 
-n = len(pages) 
-capacity = 4
-print(pageFaults(pages, n, capacity)) 
+
   
 # This code is contributed by ishankhandelwals.

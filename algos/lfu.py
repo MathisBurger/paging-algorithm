@@ -2,7 +2,7 @@ from typing import List
 from collections import defaultdict
  
  
-def pageFaults(n: int, c: int, pages: List[int]) -> int:
+def LFUpageFaults(n: int, c: int, pages: List[int]) -> int:
     # Initialise count to 0
     count = 0
  
@@ -48,12 +48,3 @@ def pageFaults(n: int, c: int, pages: List[int]) -> int:
  
     # Return total page faults
     return count
- 
- 
-# Driver program to test pageFaults function
-if __name__ == '__main__':
-    pages = [1, 2, 3, 4, 2, 1, 5]
-    n, c = 7, 3
- 
-    print("Page Faults = ", pageFaults(n, c, pages))
-    print("Page Hits = ", n - pageFaults(n, c, pages))

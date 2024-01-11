@@ -42,7 +42,7 @@ def replaceAndUpdate(x, arr, second_chance, frames, pointer):
         # Pointer is updated in round robin manner
         pointer = (pointer + 1) % frames
    
-def printHitsAndFaults(reference_string, frames):
+def secondChance(reference_string, frames):
        
     # initially we consider
     # frame 0 is to be replaced
@@ -85,14 +85,5 @@ def printHitsAndFaults(reference_string, frames):
        
     return pf
  
-reference_string = ""
-frames = 0
- 
-# Test 1:
-reference_string = "0 4 1 4 2 4 3 4 2 4 0 4 1 4 2 4 3 4"
-frames = 3
- 
-# Output is 9
-page_faults = printHitsAndFaults(reference_string,frames)
  
 # This code is contributed by mukesh07.

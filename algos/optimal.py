@@ -47,13 +47,6 @@ def optimalPage(pg, pn, fn):
         else:
             j = predict(pg, fr, pn, i + 1)
             fr[j] = pg[i]
-    print("No. of hits =", 7)
-    print("No. of misses =", 6)
- 
-# Driver Code
-pg = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2]
-pn = len(pg)
-fn = 4
-optimalPage(pg, pn, fn)
+    return pn-hit
  
 # This code is contributed by ishankhandelwals.

@@ -3,7 +3,7 @@
 from queue import Queue  
   
 # Function to find page faults using FIFO  
-def pageFaults(pages, n, capacity): 
+def fifoPageFaults(pages, n, capacity): 
       
     # To represent set of current pages.  
     # We use an unordered_set so that we 
@@ -62,13 +62,5 @@ def pageFaults(pages, n, capacity):
                 page_faults += 1
   
     return page_faults 
-  
-# Driver code  
-if __name__ == '__main__': 
-    pages = [7, 0, 1, 2, 0, 3, 0,  
-                4, 2, 3, 0, 3, 2]  
-    n = len(pages)  
-    capacity = 4
-    print(pageFaults(pages, n, capacity)) 
   
 # This code is contributed by PranchalK 
